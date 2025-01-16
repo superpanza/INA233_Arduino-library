@@ -19,13 +19,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[LiBAT5V2A Brochure](https://infinitypv.com/brochures/LiBAT5V2A%20Brochure%20V2.pdf)** - Short description for the LiBAT5V2A evaluation board. 
-* **[LiBAT5V2A Application Note](https://infinitypv.com/application_notes/LiBAT5V2A_applicationnoteV2.0.pdf)** - Application Note for the LiBAT52A evaluation board. Here you can find where are place the INA233 ADCs and how to configure the shunt resistors to get highest accuracy mesuring current for your application. 
 * **[INA233 datasheet](http://www.ti.com/lit/ds/symlink/ina233.pdf)** - INA233 ADC/I2C datasheet from Texas Instruments.
-
-Product Versions
-----------------
-* [LiBAT5V2A Energy Management Shield](https://infinitypv.com/products/electronics/libat5v2a)- Boost converter from Li batteries to 5V/2A including INA233 for energy monitoring and TPS27081A as controlled power switch for smart supply. 
 
 Version History
 ---------------
