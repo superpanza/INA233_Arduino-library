@@ -1,11 +1,6 @@
 infinityPV INA233 Arduino Library
 ========================================
 
-![LiBAT5V2A](https://github.com/infinityPV/infinityPV_INA233_Arduino-library/blob/master/extras/libat5v2a-ardu-solar-cell.jpg)
-
-[*LiBAT5V2A Multiplatform *](https://infinitypv.com/products/electronics/libat5v2a) 
-
-
 This is an Arduino IDE library for monitoring V/I and energy at different points in the infinityPV LiBAT5V2A evaluation board
 through the INA233 ADCs on board. However, you can use the library for your own designs including INA233 ADCs :).  
 
