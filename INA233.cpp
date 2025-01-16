@@ -362,7 +362,7 @@ float INA233::getShuntVoltage_mV() {
 */
 /**************************************************************************/
 float INA233::getBusVoltage_V() {
-  uint16_t value=getBusVoltage_raw();
+  int16_t value=getBusVoltage_raw();
   float vbus;
   vbus =(value*pow(10,-R_vb)-b_vb)/m_vb;
   return vbus;
