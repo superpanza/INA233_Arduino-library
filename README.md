@@ -1,7 +1,9 @@
-infinityPV INA233 Arduino Library
+INA233 Arduino Library
 ========================================
 
-This is an Arduino IDE library for monitoring V/I and energy at different points in the infinityPV LiBAT5V2A evaluation board
+This is a fork from infinityPV_INA223_Arduino-library. It seems like the team stops the development of the library leaving unsolved some bugs in the current release (v1.0). 
+
+Arduino IDE library for monitoring V/I and energy at different points in the infinityPV LiBAT5V2A evaluation board
 through the INA233 ADCs on board. However, you can use the library for your own designs including INA233 ADCs :).  
 
 Repository Contents
