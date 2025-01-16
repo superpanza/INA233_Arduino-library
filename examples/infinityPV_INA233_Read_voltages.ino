@@ -30,7 +30,7 @@
 //////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>
-#include <infinityPV_INA233.h>
+#include <INA233.h>
 
 //I2C Adresses for the 2 INA233 on board 
 INA233 IC1(0x45);  // IC1 address 0x45 1000101 
