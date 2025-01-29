@@ -127,6 +127,30 @@ void INA233::wireReadByte(uint8_t reg, uint8_t *value)
   Wire.requestFrom(ina233_i2caddr,(uint8_t)1,reg,(uint8_t)1,(uint8_t)true);
   *value = Wire.read();
 }
+
+uint16_t INA233::setCalibrationFromParams(uint16_t CAL, int16_t m_c, int8_t R_c,int16_t m_p, int8_t, uint8_t *ERROR)
+{
+
+  uint8_t local_ERROR=0;
+  //Check CAL is in the uint16 range
+  if (CAL>0xFFFF)
+    {
+      local_ERROR=1;
+    }
+  else
+    {
+    wireWriteWord(MFR_CALIBRATION, (uint16_t)CAL);
+    }
+
+  *ERROR=local_ERROR;
+  m_c=m_c;
+  m_p=m_p;
+  R_c=R_c;
+  R_p=R_p;
+
+  return(uint16_t)CAL;
+}
+
 /**************************************************************************/
 /*!
     @brief  Set INA233 Calibration register for measuring based on the user's

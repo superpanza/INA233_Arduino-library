@@ -132,6 +132,7 @@ class INA233{
   int16_t getCurrent_raw(void);
   int16_t getPower_raw(void);
   void getEnergy_raw(uint16_t* accumulator, uint8_t* roll_over, uint32_t* sample_count);
+  uint16_t setCalibrationFromParams(uint16_t CAL, int16_t m_c, int8_t R_c,int16_t m_p, int8_t, uint8_t *ERROR);
   uint16_t setCalibration(float r_shunt,float i_max,float *Current_LSB,float *Power_LSB, int16_t *m_c,int8_t *R_c, int16_t *m_p, int8_t *R_p,  uint8_t *ERROR);
   void wireReadWord(uint8_t reg, uint16_t *value);
   void wireReadByte(uint8_t reg, uint8_t *value);
